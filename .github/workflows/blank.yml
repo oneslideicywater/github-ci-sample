@@ -39,6 +39,7 @@ jobs:
       - name: Log in to Aliyun Docker Private Registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
+          registry: registry.cn-hangzhou.aliyuncs.com
           username: ${{ secrets.ALIYUN_DOCKER_USERNAME }}
           password: ${{ secrets.ALIYUN_DOCKER_PASSWORD }}
       # Runs a set of commands using the runners shell
