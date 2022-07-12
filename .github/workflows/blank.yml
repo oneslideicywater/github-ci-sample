@@ -56,6 +56,6 @@ jobs:
           arch: aarch64
           distro: ubuntu18.04
           run: | 
-            uname -a 
+            docker pull k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
             
       
